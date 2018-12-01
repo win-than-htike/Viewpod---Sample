@@ -7,14 +7,29 @@
 //
 
 import UIKit
+import SnapKit
+
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var viewTest: ViewOne!
+    @IBOutlet weak var viewTest2: ViewOne!
+    
+    var viewOne : ViewOne = {
+        let vo = ViewOne(frame: CGRect.zero)
+        return vo
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        viewTest.isHidden = true
+        
+        viewTest.bindData(message: "Hello View One")
+        
+        viewTest2.bindData(message: "Hello View Two")
+        
     }
 
 
 }
-

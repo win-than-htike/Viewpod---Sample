@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewOne" customModule="Viewpod_Sample" customModuleProvider="target">
+            <connections>
+                <outlet property="containerView" destination="iN0-l3-epB" id="xs5-z3-gJH"/>
+                <outlet property="title" destination="mqx-uD-GsS" id="32c-o7-dpS"/>
+                <outlet property="viewOne" destination="eIe-Nk-FKI" id="xuT-Yn-8se"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eIe-Nk-FKI">
+                    <rect key="frame" x="16" y="0.0" width="343" height="250"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mqx-uD-GsS">
+                            <rect key="frame" x="152" y="114.5" width="39" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="mqx-uD-GsS" firstAttribute="centerX" secondItem="eIe-Nk-FKI" secondAttribute="centerX" id="hFN-Xc-TOc"/>
+                        <constraint firstItem="mqx-uD-GsS" firstAttribute="centerY" secondItem="eIe-Nk-FKI" secondAttribute="centerY" id="rzi-Yg-blM"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="eIe-Nk-FKI" secondAttribute="trailing" constant="16" id="9LM-XW-qYb"/>
+                <constraint firstItem="eIe-Nk-FKI" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="BXT-aq-rVr"/>
+                <constraint firstItem="eIe-Nk-FKI" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="Cvu-fW-yTo"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="eIe-Nk-FKI" secondAttribute="bottom" id="uwj-YA-2uY"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="138.40000000000001" y="-33.283358320839582"/>
+        </view>
+    </objects>
+</document>

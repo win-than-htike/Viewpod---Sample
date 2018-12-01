@@ -12,9 +12,15 @@
 		99167CDF21A93BE60061F7AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99167CDD21A93BE60061F7AA /* Main.storyboard */; };
 		99167CE121A93BE80061F7AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99167CE021A93BE80061F7AA /* Assets.xcassets */; };
 		99167CE421A93BE80061F7AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99167CE221A93BE80061F7AA /* LaunchScreen.storyboard */; };
+		99690BF321A93CCB005A9881 /* ViewOne.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99690BF221A93CCB005A9881 /* ViewOne.xib */; };
+		99690BF521A93D53005A9881 /* ViewOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99690BF421A93D53005A9881 /* ViewOne.swift */; };
+		F21D28FB36B9ABA0B5C05D4F /* Pods_Viewpod_Sample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B4044707D87501A69F4EE83 /* Pods_Viewpod_Sample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		20C03726F0AE541444354441 /* Pods-Viewpod-Sample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Viewpod-Sample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Viewpod-Sample/Pods-Viewpod-Sample.debug.xcconfig"; sourceTree = "<group>"; };
+		671AD7D6D8C9C85FEE7B0326 /* Pods-Viewpod-Sample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Viewpod-Sample.release.xcconfig"; path = "Pods/Target Support Files/Pods-Viewpod-Sample/Pods-Viewpod-Sample.release.xcconfig"; sourceTree = "<group>"; };
+		7B4044707D87501A69F4EE83 /* Pods_Viewpod_Sample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Viewpod_Sample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		99167CD621A93BE60061F7AA /* Viewpod-Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Viewpod-Sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		99167CD921A93BE60061F7AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		99167CDB21A93BE60061F7AA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +28,8 @@
 		99167CE021A93BE80061F7AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		99167CE321A93BE80061F7AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		99167CE521A93BE80061F7AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99690BF221A93CCB005A9881 /* ViewOne.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewOne.xib; sourceTree = "<group>"; };
+		99690BF421A93D53005A9881 /* ViewOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewOne.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F21D28FB36B9ABA0B5C05D4F /* Pods_Viewpod_Sample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D62B9F0D35E5999F0AE921A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				20C03726F0AE541444354441 /* Pods-Viewpod-Sample.debug.xcconfig */,
+				671AD7D6D8C9C85FEE7B0326 /* Pods-Viewpod-Sample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		91C8B25EC0C36070F99AB0D5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7B4044707D87501A69F4EE83 /* Pods_Viewpod_Sample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		99167CCD21A93BE60061F7AA = {
 			isa = PBXGroup;
 			children = (
 				99167CD821A93BE60061F7AA /* Viewpod-Sample */,
 				99167CD721A93BE60061F7AA /* Products */,
+				0D62B9F0D35E5999F0AE921A /* Pods */,
+				91C8B25EC0C36070F99AB0D5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +88,8 @@
 				99167CE021A93BE80061F7AA /* Assets.xcassets */,
 				99167CE221A93BE80061F7AA /* LaunchScreen.storyboard */,
 				99167CE521A93BE80061F7AA /* Info.plist */,
+				99690BF221A93CCB005A9881 /* ViewOne.xib */,
+				99690BF421A93D53005A9881 /* ViewOne.swift */,
 			);
 			path = "Viewpod-Sample";
 			sourceTree = "<group>";
@@ -71,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 99167CE821A93BE80061F7AA /* Build configuration list for PBXNativeTarget "Viewpod-Sample" */;
 			buildPhases = (
+				634488F1E782103292987F5C /* [CP] Check Pods Manifest.lock */,
 				99167CD221A93BE60061F7AA /* Sources */,
 				99167CD321A93BE60061F7AA /* Frameworks */,
 				99167CD421A93BE60061F7AA /* Resources */,
+				95C395913A5EC23007448EBA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				99167CE421A93BE80061F7AA /* LaunchScreen.storyboard in Resources */,
+				99690BF321A93CCB005A9881 /* ViewOne.xib in Resources */,
 				99167CE121A93BE80061F7AA /* Assets.xcassets in Resources */,
 				99167CDF21A93BE60061F7AA /* Main.storyboard in Resources */,
 			);
@@ -130,11 +163,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		634488F1E782103292987F5C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Viewpod-Sample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		95C395913A5EC23007448EBA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Viewpod-Sample/Pods-Viewpod-Sample-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Viewpod-Sample/Pods-Viewpod-Sample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		99167CD221A93BE60061F7AA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99690BF521A93D53005A9881 /* ViewOne.swift in Sources */,
 				99167CDC21A93BE60061F7AA /* ViewController.swift in Sources */,
 				99167CDA21A93BE60061F7AA /* AppDelegate.swift in Sources */,
 			);
@@ -280,6 +361,7 @@
 		};
 		99167CE921A93BE80061F7AA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20C03726F0AE541444354441 /* Pods-Viewpod-Sample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +380,7 @@
 		};
 		99167CEA21A93BE80061F7AA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 671AD7D6D8C9C85FEE7B0326 /* Pods-Viewpod-Sample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
